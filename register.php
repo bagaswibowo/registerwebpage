@@ -18,7 +18,7 @@ if (isset($_POST['signup'])) {
 
     // check email exist or not
     $stmt = $conn->prepare("SELECT email FROM users WHERE email=?");
-    $stmt->bind_param("s", $email);
+    $stmt->bind_param("sss", $email);
     $stmt->execute();
     $result = $stmt->get_result();
     $stmt->close();
