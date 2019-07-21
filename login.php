@@ -103,10 +103,30 @@ if (isset($_POST['btn-login'])) {
                        name="btn-login">Register</a>
                 </div>
 
-                <div class="form-group">
-                    <a href="load.php" type="button" class="btn btn-block btn-danger"
-                        name="btn-login">Load Data</a>
-                </div>
+                <h3>data user</h3>
+	            <table border="1" class="table">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Pekerjaan</th>
+                                
+                    </tr>
+                    <?php 
+                    include "koneksi.php";
+                    $query_mysql = mysql_query("SELECT * FROM users")or die(mysql_error());
+                    $id = 1;
+                    while($data = mysql_fetch_array($query_mysql)){
+                    ?>
+                        <tr>
+                            <td><?php echo $id++; ?></td>
+                            <td><?php echo $data['username']; ?></td>
+                            <td><?php echo $data['email']; ?></td>
+                            <td><?php echo $data['password']; ?></td>
+                            
+                        </tr>
+                    <?php } ?>
+                </table>
 
             </div>
 
