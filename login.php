@@ -103,6 +103,11 @@ if (isset($_POST['btn-login'])) {
                        name="btn-login">Register</a>
                 </div>
 
+                <div class="form-group">
+                    <a href="load.php" type="button" class="btn btn-block btn-danger"
+                        name="btn-login">Load Data</a>
+                </div>
+
             </div>
 
         </form>

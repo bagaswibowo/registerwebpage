@@ -35,7 +35,7 @@ $userRow = mysqli_fetch_array($res, MYSQLI_ASSOC);
             <a class="navbar-brand" href="#">bagas wibowo</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-           
+         
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
@@ -65,7 +65,13 @@ $userRow = mysqli_fetch_array($res, MYSQLI_ASSOC);
         
     </div>
 
-    
+    <div class="row">
+        <div class="col-lg-12">
+            
+        </div>
+
+
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
